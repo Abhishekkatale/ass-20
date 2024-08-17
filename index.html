@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .card-container {
+            display: flex;
+            background-color: bisque;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            border: 4px double black;
+            border-radius: 10px;
+            margin: 5px;
+            overflow: hidden; /* Ensures that the image does not overflow the card */
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-title {
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="Hostels/H1.jpg" class="card-img" alt="Hostel Image 1" />
+            <h2 class="card-title">Zero</h2>
+        </div>
+        <div class="card">
+            <img src="Hostels/H3.jpg" class="card-img" alt="Hostel Image 2" />
+            <h2 class="card-title">Zero</h2>
+        </div>
+        <div class="card">
+            <img src="Hostels/H4.jpg" class="card-img" alt="Hostel Image 3" />
+            <h2 class="card-title">Zero</h2>
+        </div>
+        <div class="card">
+            <img src="Hostels/H6.jpg" class="card-img" alt="Hostel Image 4" />
+            <h2 class="card-title">Zero</h2>
+        </div>
+    </div>
+</body>
+
+</html>
